@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      fieldset {
+        background-color: rgb(68, 166, 196);
+        border-radius: 1cm;
+        justify-content: space-between;
+      }
+      ul {
+        font-family: "Robotoo", sans-serif;
+      }
+
+      .drop-menu {
+        background-color: #fff;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        gap: 20px;
+        padding: 20px;
+        display: none;
+      }
+      .drop:hover .drop-menu {
+        display: block;
+        display: flex;
+      }
+
+      nav li a:hover {
+        background-color: #00a3c8;
+        color: #fff;
+      }
+
+      nav > ul > li > a:hover {
+        color: #00a3c8;
+        background-color: #ffffff00;
+      }
+
+      nav {
+        display: grid;
+        grid-template-columns: 15% 50% 35%;
+        align-items: center;
+        background-color: #fff;
+        padding: 10px 5px 20px;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        line-height: 25px;
+        font-family: "Robotoo", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        font-family: "Robotoo", sans-serif;
+
+        padding: 0;
+      }
+      nav li {
+        display: inline-block;
+        margin-right: 20px;
+        font-family: "Robotoo", sans-serif;
+      }
+      nav li a {
+        font-size: small;
+        color: #333;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      nav li a:hover {
+        background-color: #00a3c8;
+        color: #fff;
+      }
+      footer a {
+        text-decoration: none;
+        color: #fff;
+      }
+      footer a:hover {
+        color: #00a3c8;
+      }
+
+      footer li {
+        margin: 0 0 10px -40px;
+        font-size: 15px;
+      }
+      footer p {
+        font-size: 19px;
+      }
+      .cntct {
+        font-size: 30px;
+        font-weight: 400;
+      }
+      .social {
+        font-size: 25px;
+      }
+      .bi-youtube {
+        font-size: 30px;
+        position: relative;
+        top: 2.5px;
+      }
+
+      .sign {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+      }
+      #request {
+        color: #333;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      #request:hover {
+        color: rgba(51, 51, 51, 0.7);
+      }
+      #signIn > button {
+        background-color: #00a3c8;
+        color: #fff;
+        border: none;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        height: 28px;
+        width: 70px;
+        cursor: pointer;
+      }
+
+      .top-header {
+        text-align: center;
+        background-color: rgb(68, 166, 196);
+        font-style: solid;
+        font-family: "Robotoo", sans-serif;
+        font-size: x-large;
+        color: #fff;
+      }
+      .header {
+        font-size: larger;
+        font-family: "Robotoo", sans-serif;
+      }
+      #h {
+        font-size: large;
+        font-family: "Robotoo", sans-serif;
+        font-style: normal;
+        text-align: left;
+        margin-left: 4%;
+        color: #00a3c8;
+      }
+      .d {
+        font-size: medium;
+        font-family: "Robotoo", sans-serif;
+        font-style: normal;
+        margin-left: 2%;
+      }
+      .blue-text {
+        color: #00a3c8;
+        font-family: "Robotoo", sans-serif;
+        font-size: small;
+      }
+      /* your footer css*/
+
+      footer {
+        width: 100%;
+        min-height: 200px;
+        background-color: #162033;
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 160px;
+        padding-top: 30px;
+        font-weight: 300;
+        font-family: "Roboto", sans-serif;
+      }
+      .vl {
+        background-color: rgba(255, 255, 0.5);
+        border-radius: 10 px;
+        height: 150px;
+        width: 1px;
+        margin: auto;
+      }
+      footer a {
+        text-decoration: none;
+        color: #fff;
+      }
+      footer a:hover {
+        color: #00a3c8;
+      }
+      footer ul {
+        list-style: none;
+      }
+      b {
+        color: black;
+        font-size: small;
+      }
+    </style>
+    <title>page_2</title>
+  </head>
+  <body>
+    <nav>
+      <div style="display: flex; flex-wrap: wrap; cursor: pointer">
+        <img src="/Images/logo.png" style="width: 110px" alt="Logo" />
+        <p
+          style="
+            color: #292d32;
+            margin: auto 0;
+            position: relative;
+            bottom: -14px;
+            left: -24px;
+            font-size: 19px;
+            font-weight: 400;
+          "
+        >
+          ITClinic
+        </p>
+      </div>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/AboutUs.html">About Us</a></li>
+        <li class="drop">
+          <a href="/locations.html"
+            >Locations<i class="bi bi-caret-down-fill"></i
+          ></a>
+          <div class="drop-menu">
+            <ul>
+              <li><a href="/Locations/index1.html">FLORENCE</a></li>
+              <li><a href="/Locations/index2.html">GADSDEN</a></li>
+              <li><a href="/Locations/inxdex3.html">LUVERNE</a></li>
+              <li><a href="/Locations/index4.html">TALLASSEE</a></li>
+              <li><a href="/Locations/index5.html">GROVE HILL</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">GENEVA</a></li>
+              <li><a href="#">CAMDEN</a></li>
+              <li><a href="#">WINFIELD</a></li>
+              <li><a href="#">BREWTON</a></li>
+              <li><a href="#">DEMOPOLIS</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">DADEVILLE</a></li>
+              <li><a href="#">TALLADEGA</a></li>
+              <li><a href="#">FAIRHOPE</a></li>
+              <li><a href="#">WETUMPKA</a></li>
+              <li><a href="#">BIRMINGHAM</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/medicalProviders.html">Medical providers</a></li>
+        <li><a href="/Contact.html">Contact Us</a></li>
+      </ul>
+      <div class="sign">
+        <a href="/request.html" id="request">
+          <i class="bi bi-telephone-fill"></i> Request an appointment</a
+        >
+        <a href="#" id="signIn"><button>Sign In</button></a>
+      </div>
+    </nav>
+    <fieldset>
+      <div class="top-header">
+        <p>Welcome To ITCINIC</p>
+        <p>Health System -Grove Hill</p>
+      </div>
+    </fieldset>
+    <div class="" id="h"><p>ITCCLINIC Helth System For You</p></div>
+    <p class="d">
+      Your health care needs always come first at ITCCLINIC Health
+    </p>
+    <p class="d">System -Grove Hill in Clarke</p>
+
+    <!-------------- image---------------->
+    <img src="grovehill.jpg" alt="" classe="photo" />
+
+    <ul>
+      <li>Learn about our <b class="blue-text">local servises</b></li>
+      <li>Meet our <b class="blue-text">providers.</b></li>
+      <li>
+        If you need servises not provided by ITCLINIK Health <br />
+        System- Florence in Lauderance ,we can help you locate <br />
+        the services you need , close to home.
+      </li>
+      <br />
+      <p class="blue-text">Adress:<b>295 JACKSON HWY $</b></p>
+
+      <p class="blue-text">Zip code : <b>36451</b></p>
+      <p class="blue-text">Phone number:<b>2512753191 </b></p>
+      <p class="blue-text">Rating : <b> 3</b></p>
+    </ul>
+
+    <!---   footer -->
+    <footer>
+      <div>
+        <p class="cntct">Contact us:</p>
+        <div class="social">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="vl"></div>
+
+      <div>
+        <p>Medical Providers</p>
+        <ul>
+          <li><a href="/medicalProviders.html">Doctors</a></li>
+          <li><a href="/medicalProviders.html">hospitals</a></li>
+          <li><a href="/medicalProviders.html">Pharmacies</a></li>
+        </ul>
+      </div>
+
+      <div class="vl"></div>
+
+      <div>
+        <p>For patient</p>
+        <ul>
+          <li><a href="/request.html">patient online service</a></li>
+          <li><a href="/bill.html">pay bill online</a></li>
+          <li><a href="/request.html">Request an appointment</a></li>
+        </ul>
+      </div>
+
+      <div class="vl"></div>
+
+      <div class="signin">
+        <p>Sign in</p>
+        <div>
+          <input type="email" placeholder="Your Email Adress" />
+          <div class="vl1"></div>
+          <button type="submit">Send</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

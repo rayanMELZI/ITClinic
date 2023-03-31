@@ -1,0 +1,69 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 60px 0 80px;
+}
+
+.cards > div {
+  width: 20vw;
+  min-width: 200px;
+  margin-bottom: 40px;
+  border-radius: 25px;
+  box-shadow: 0 3px 3px #bbb;
+  text-align: center;
+  padding: 0 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.v2 > div {
+  width: 28vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+}
+.v2 p {
+  margin: 3px;
+}
+.pic {
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+  width: 100%;
+}
+.pic1 {
+  background-image: url("/Images/location1.jpg");
+}
+.pic2 {
+  background-image: url("/Images/location2.jpg");
+}
+.pic3 {
+  background-image: url("/Images/location3.jpg");
+}
+
+.hospitals {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.phar1 {
+  background-image: url("/Images/Pharmacie1.jpg");
+}
+.phar2 {
+  background-image: url("/Images/Pharmacie2.jpg");
+}
+.phar3 {
+  background-image: url("/Images/Pharmacie3.jpg");
+}
+
+.v2-1 > div {
+  height: 300px;
+}
+.v2-1 p {
+  font-size: 25px;
+  text-align: start;
+  padding: 10px 0 0 10px;
+}

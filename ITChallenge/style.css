@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  width: 100vw;
+
+  font-family: "Roboto", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00a3c8;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #76bdda;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 15% 50% 35%;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 5px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 15px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav li a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.drop-menu {
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  gap: 20px;
+  padding: 20px;
+  display: none;
+}
+.drop:hover .drop-menu {
+  display: block;
+  display: flex;
+}
+
+nav li a:hover {
+  background-color: #00a3c8;
+  color: #fff;
+}
+
+nav > ul > li > a:hover {
+  color: #00a3c8;
+  background-color: #ffffff00;
+}
+
+.sign {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+#request {
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#request:hover {
+  color: rgba(51, 51, 51, 0.7);
+}
+#signIn > button {
+  background-color: #00a3c8;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  height: 28px;
+  width: 70px;
+  cursor: pointer;
+}
+
+.welcome {
+  background-color: #76bdda;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 260px;
+  font-size: 45px;
+  font-weight: 400;
+  padding-left: 80px;
+  overflow: hidden;
+  font-family: "Lexend", sans-serif;
+}
+.welcome > img {
+  height: 260px;
+}
+.welcome p {
+  margin-bottom: 0;
+}
+.welcome button {
+  height: 60px;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  color: #00a3c8;
+  cursor: pointer;
+}
+.btn {
+  display: flex;
+  gap: 40px;
+  font-size: 15px;
+  margin-top: 20px;
+  align-items: center;
+}
+.btn a {
+  text-decoration: none;
+  color: #292d32;
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.btn i {
+  color: #fff;
+}
+
+.About {
+  display: grid;
+  grid-template-columns: 53% 35%;
+  align-items: center;
+  margin-top: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.About > img {
+  height: 230px;
+  width: 230px;
+  margin: auto;
+}
+.h1 {
+  font-size: 30px;
+  margin: 0;
+}
+.title {
+  color: #00a3c8;
+  font-size: 18px;
+}
+
+.specialities {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 55px 20px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.specialities > div {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 33px;
+}
+.specialities li {
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.doctors {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 60px 0;
+  font-weight: 400;
+}
+.doctors > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imgs {
+  width: 20vw;
+  min-width: 190px;
+  height: 190px;
+  background-size: cover;
+}
+.img1 {
+  background-image: url("/Images/istockphoto-92347287-612x612.jpg");
+  background-position: center;
+}
+.img2 {
+  background-image: url("/Images/istockphoto-1199676919-612x612.jpg");
+  background-position: center;
+}
+.img3 {
+  background-image: url("Images/istockphoto-1200980392-612x612.jpg");
+  background-position: center;
+}
+.img4 {
+  background-image: url("/Images/t8rn55.jpg");
+}
+.spec {
+  color: #999;
+  font-size: 18px;
+}
+
+.app {
+  margin: 80px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+}
+.app div {
+  background-color: #76bdda;
+  height: 220px;
+  width: 78%;
+  border-radius: 20px;
+  box-shadow: -4.5px 3px 3px #bbb;
+  padding: 10px 0 0 28px;
+}
+.appP1 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.appP2 {
+  margin-top: 0;
+  color: #292d32;
+}
+.app p {
+  font-size: 31px;
+}
+
+.app img {
+  height: 360px;
+  position: absolute;
+  right: 7%;
+  top: -60px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 4.5px 5px 3px #bbb;
+}
+
+footer {
+  width: 100%;
+  min-height: 200px;
+  background-color: #162033;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  margin-top: 160px;
+  padding-top: 30px;
+
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+.vl {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  height: 150px;
+  width: 1px;
+  margin: auto 0;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer a:hover {
+  color: #00a3c8;
+}
+
+footer ul {
+  list-style: none;
+}
+footer li {
+  margin: 0 0 10px -40px;
+  font-size: 15px;
+}
+footer p {
+  font-size: 19px;
+}
+.cntct {
+  font-size: 30px;
+  font-weight: 400;
+}
+.social {
+  font-size: 25px;
+}
+.bi-youtube {
+  font-size: 30px;
+  position: relative;
+  top: 2.5px;
+}
+
+.signin > div {
+  display: flex;
+}
+.signin input {
+  background-color: hsla(0, 0%, 100%, 0.2);
+  color: #fff;
+  height: 35px;
+  width: 200px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  margin-right: 0;
+  position: relative;
+  padding: 0 10px;
+}
+.signin input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+}
+.vl1 {
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  width: 1px;
+  margin: auto 0;
+}
+.signin button {
+  background-color: hsla(0, 0%, 100%, 0.2);
+  height: 35px;
+  border-radius: 0 8px 8px 0;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  margin-left: 0;
+  cursor: pointer;
+}

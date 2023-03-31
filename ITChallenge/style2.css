@@ -1,0 +1,28 @@
+p {
+  font-size: 28px;
+}
+
+section {
+  margin: 20px 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+label {
+  font-weight: 500;
+}
+
+.input {
+  margin: 5px 0 20px;
+  height: 18px;
+  width: 180px;
+}
+
+#submit {
+  background-color: #00a3c8;
+  color: #fff;
+  border: none;
+  height: 28px;
+  width: 100px;
+  cursor: pointer;
+  margin-left: 8px;
+}
